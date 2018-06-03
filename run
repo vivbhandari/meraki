@@ -1,0 +1,6 @@
+#!/bin/sh
+
+numOfNodes=${1:-1}
+
+mvn package
+java -jar target/grabber-assignment-0.1-jar-with-dependencies.jar $numOfNodes
